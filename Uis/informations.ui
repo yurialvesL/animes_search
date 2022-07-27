@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Anime description</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>D:/Download/esfera.ico</normaloff>D:/Download/esfera.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(84, 84, 84);
+/*background-image:url(C:/Users/Yuri/PycharmProject/anime/img/wallpaper.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="QFrame_Information">
+      <property name="styleSheet">
+       <string notr="true">Border-radius:15px;
+Border-color:solid 15px white;
+background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>601</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+/*scroll vertical*/
+QScrollBar:vertical{
+border:none;
+background-color: rgb(59, 59, 90);
+width:14px;
+margin: 15px 0 15px 0;
+border-radius: 0px;
+}
+
+/* handle bar  vertical*/
+QScrollBar::handle:vertical{
+background-color: rgb(80, 80, 122);
+min-heinght:10px;
+border-radius:7px;
+
+}
+QScrollBar::handle:vertical:hover{
+background-color: rgb(0, 0, 255);
+
+}
+QscollBar::handle:vertical:pressed {
+background-color:rgb(185,0,92);
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>587</width>
+          <height>978</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>960</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>50</y>
+              <width>161</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Nome em Romaji:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_romaji">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>50</y>
+              <width>321</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>Kami nomi zo shiru sekai </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>110</y>
+              <width>153</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Nome em Inglês:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_english">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>110</y>
+              <width>321</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>The World God Only Knows</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>170</y>
+              <width>123</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Lançamento:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_launch_date">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>170</y>
+              <width>311</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>7/05/2016</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>191</width>
+              <height>181</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>40</y>
+              <width>341</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>100</y>
+              <width>341</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>160</y>
+              <width>341</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>240</y>
+              <width>291</width>
+              <height>181</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>250</y>
+              <width>265</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Temporada do lançamento:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>320</y>
+              <width>238</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>238</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>238</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Quantidade de episódios:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_13">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>370</y>
+              <width>87</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Gêneros:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>240</y>
+              <width>241</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_temp_launch">
+            <property name="geometry">
+             <rect>
+              <x>330</x>
+              <y>250</y>
+              <width>211</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>Winter</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_15">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>310</y>
+              <width>241</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_qtd_ep">
+            <property name="geometry">
+             <rect>
+              <x>330</x>
+              <y>320</y>
+              <width>211</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>400</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>370</y>
+              <width>241</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl_genre">
+            <property name="geometry">
+             <rect>
+              <x>330</x>
+              <y>380</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-bottom: 5px solid black;
+border-radius:none;</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ação, comédia, romance,supernatural&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>440</y>
+              <width>541</width>
+              <height>491</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid black;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QTextBrowser" name="tb_sinopse">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>500</y>
+              <width>501</width>
+              <height>421</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;O deus menor Yato está com pouca sorte. Farto de seu estilo de vida preguiçoso, seu parceiro desiste abruptamente. Ele não tem dinheiro, nem adoradores, nem santuário para chamar de lar. Mas justamente quando as coisas começam a parecer sem esperança, um acidente de ônibus o força a cruzar com Hiyori Iki, uma doce e alegre colegial. Após o acidente, a alma de Hiyori tem o mau hábito de escorregar para fora de seu corpo, e depois de pedir a ajuda de Yato para trazê-la de volta ao normal, ela começa a cair no mundo dos espíritos e deuses.&amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Mas Hiyori não é a única que está de olho em Yato. Um deus do passado de Yato está de volta e ele não está interessado em um reencontro amigável.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>450</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Bangers</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sinopse:</string>
+            </property>
+           </widget>
+           <zorder>label_9</zorder>
+           <zorder>label_8</zorder>
+           <zorder>label_7</zorder>
+           <zorder>label_6</zorder>
+           <zorder>label_3</zorder>
+           <zorder>lbl_romaji</zorder>
+           <zorder>label_4</zorder>
+           <zorder>lbl_english</zorder>
+           <zorder>label_5</zorder>
+           <zorder>lbl_launch_date</zorder>
+           <zorder>label_10</zorder>
+           <zorder>label_11</zorder>
+           <zorder>label_12</zorder>
+           <zorder>label_13</zorder>
+           <zorder>label_14</zorder>
+           <zorder>lbl_temp_launch</zorder>
+           <zorder>label_15</zorder>
+           <zorder>lbl_qtd_ep</zorder>
+           <zorder>label_16</zorder>
+           <zorder>lbl_genre</zorder>
+           <zorder>label_17</zorder>
+           <zorder>tb_sinopse</zorder>
+           <zorder>label_18</zorder>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>221</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bangers</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Informações:</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>0</y>
+         <width>628</width>
+         <height>681</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:15px;
+background-color:black;
+background-image:none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="lbl_animage">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>581</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+background-clip: border-box; 
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap>../img/dragon ball.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_titulo">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>410</y>
+          <width>289</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>24</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">Border-bottom: 2px solid white;
+color: rgb(255, 255, 255);
+border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Kami Nomi Zo Shiru Sekai</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_voltar">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>620</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>14</pointsize>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border:1px solid white;
+border-radius:20px;
+
+QPushButton::handle {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>590</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+</string>
+        </property>
+        <property name="text">
+         <string>Media:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lbl_nota">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>600</y>
+          <width>30</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;
+Background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>85</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_browse">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>520</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bangers</family>
+          <pointsize>14</pointsize>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+border:1px solid white;
+border-radius:20px;
+
+QPushButton::handle {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Assista Agora !</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="lbl_egg">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Malgun Gothic</family>
+         <pointsize>28</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
