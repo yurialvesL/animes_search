@@ -15,7 +15,13 @@ class Ui_Mw_inicial(object):
     def setupUi(self, Mw_inicial):
         Mw_inicial.setObjectName("Mw_inicial")
         Mw_inicial.resize(420, 331)
-        Mw_inicial.setStyleSheet("Background-color:black;")
+        Mw_inicial.setStyleSheet("Background-color:black;\n"
+"\n"
+"QPushButton::Hover{\n"
+"border-color:red;\n"
+"\n"
+"}\n"
+"")
         self.centralwidget = QtWidgets.QWidget(Mw_inicial)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(self.centralwidget)
@@ -96,8 +102,10 @@ class Ui_Mw_inicial(object):
         font.setFamily("Arial")
         font.setPointSize(12)
         self.lineEdit.setFont(font)
-        self.lineEdit.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"border-radius:20px;")
+        self.lineEdit.setStyleSheet("background-color: transparent;\n"
+"border-bottom: 1px solid white;\n"
+"border-radius:none;\n"
+"color:white;")
         self.lineEdit.setText("")
         self.lineEdit.setObjectName("lineEdit")
         self.label_3 = QtWidgets.QLabel(self.frame)
@@ -117,7 +125,9 @@ class Ui_Mw_inicial(object):
         self.Btn_buscar.setStyleSheet("background-color: transparent;\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius:15px;\n"
-"border: 1px solid white;")
+"border: 1px solid white;\n"
+"\n"
+"")
         self.Btn_buscar.setObjectName("Btn_buscar")
         self.label_5.raise_()
         self.label_2.raise_()

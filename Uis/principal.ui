@@ -14,7 +14,13 @@
    <string>Busca_anime</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">Background-color:black;</string>
+   <string notr="true">Background-color:black;
+
+QPushButton::Hover{
+border-color:red;
+
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">
@@ -258,7 +264,9 @@ Background-repeat:no-repeat;
       <string notr="true">background-color: transparent;
 color: rgb(255, 255, 255);
 border-radius:15px;
-border: 1px solid white;</string>
+border: 1px solid white;
+
+</string>
      </property>
      <property name="text">
       <string>Buscar</string>

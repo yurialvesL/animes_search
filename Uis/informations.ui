@@ -30,8 +30,35 @@
     <normaloff>D:/Download/esfera.ico</normaloff>D:/Download/esfera.ico</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(84, 84, 84);
-/*background-image:url(C:/Users/Yuri/PycharmProject/anime/img/wallpaper.jpg);</string>
+   <string notr="true">QMainWindow{
+background-color: rgb(84, 84, 84);}
+
+QScrollBar:vertical{
+border:none;
+background-color: rgb(59, 59, 90);
+width:14px;
+margin: 15px 0 15px 0;
+border-radius: 0px;
+}
+
+/* handle bar  vertical*/
+QScrollBar::handle:vertical{
+background-color: rgb(80, 80, 122);
+min-heinght:10px;
+border-radius:7px;
+
+}
+QScrollBar::handle:vertical:hover{
+background-color: rgb(0, 0, 255);
+
+}
+QscollBar::handle:vertical:pressed {
+background-color:rgb(185,0,92);
+
+}
+
+
+QPushButton:hover{ background-color: green; }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="toolTip">
@@ -79,7 +106,7 @@ border-radius:7px;
 
 }
 QScrollBar::handle:vertical:hover{
-background-color: rgb(0, 0, 255);
+background-color: red;
 
 }
 QscollBar::handle:vertical:pressed {
@@ -104,7 +131,7 @@ background-color:rgb(185,0,92);
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-54</y>
           <width>587</width>
           <height>978</height>
          </rect>
@@ -516,7 +543,7 @@ border-radius:none;</string>
 border-radius:none;</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ação, comédia, romance,supernatural&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ação, comédia, romance , supernatural&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -790,7 +817,7 @@ QPushButton::handle {
          <rect>
           <x>110</x>
           <y>600</y>
-          <width>30</width>
+          <width>31</width>
           <height>51</height>
          </rect>
         </property>
@@ -806,36 +833,6 @@ Background-color:transparent;</string>
         </property>
         <property name="text">
          <string>85</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btn_browse">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>520</y>
-          <width>151</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Bangers</family>
-          <pointsize>14</pointsize>
-          <underline>false</underline>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-border:1px solid white;
-border-radius:20px;
-
-QPushButton::handle {
-    background-color: rgb(224, 0, 0);
-    border-style: inset;
-}</string>
-        </property>
-        <property name="text">
-         <string>Assista Agora !</string>
         </property>
        </widget>
       </widget>
