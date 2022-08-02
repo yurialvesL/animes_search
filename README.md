@@ -16,6 +16,6 @@
 <li>Launch Date</li>
 <li>Amount of episodes</li>
 <li>Genres</li>
-<li>Sinopse</li>
+<li>Synopsis</li>
 </ul>
 <hr>
