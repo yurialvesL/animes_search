@@ -18,3 +18,4 @@
 <li>Genres</li>
 <li>Sinopse</li>
 </ul>
+<hr>
